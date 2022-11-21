@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<style>
+	/*
+		input:checked {width : 20px; height : 20px;}
+	*/
+		input[name = "fav_lang"]:checked {width : 20px; height : 20px;}
+	</style>
+	<body>
+		<form>
+			<div>
+				<input id = "fav_lang1" name = "fav_lang" type = "radio" value = "html"/>
+				<lable for = "fav_lang">HTML</lable>
+				<br/>
+				
+				<input id = "fav_lang2" name = "fav_lang" type = "radio" value = "css" checked/>
+				<lable for = "fav_lang">CSS</lable>
+				<br/>
+				
+				<input id = "fav_lang3" name = "fav_lang" type = "radio" value = "javascript"/>
+				<lable for = "fav_lang">JAVASCRIPT</lable>
+			</div>
+			
+			<hr/>
+			
+			<div>
+				<input id = "fav_hobby1" name = "fav_hobby" type = "checkbox" value = "soccer"/>
+				<lable for = "fav_hobby">soccer</lable>
+				<br/>
+				
+				<input id = "fav_hobby2" name = "fav_hobby" type = "checkbox" value = "fishing" checked/>
+				<lable for = "fav_hobby">fishing</lable>
+				<br/>
+				
+				<input id = "fav_hobby3" name = "fav_hobby" type = "checkbox" value = "walking"/>
+				<lable for = "fav_hobby">walking</lable>
+			</div>
+		</form>
+	</body>
+</html>

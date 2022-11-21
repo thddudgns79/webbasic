@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style>
+		
+		* { color : blue; }
+		
+		#topHeader { color : red; }
+		
+		.subTitle { color : green; }
+		
+		.subTitle.textContent { color : gray; }
+		
+		.menu .item { color : yellow; }
+		
+		.menu> .item { color : purple; }
+		</style>
+	</head>
+	<body>
+		<h4 id = "topHeader" class = "subTitle">css selector</h4>
+		<hr/>
+		
+		<h4 class = "subTitle textContent">글자영역</h4>
+		<p>This is a paragraph</p>
+		<div>this is content</div>
+		
+		<h4 class = "subTitle">메뉴영역</h4>
+		<p class = menu>
+			<a class = item href = "">link1</a>
+			<a class = item href = "">link2</a>
+			<a class = item href = "">link3</a>
+			<span>
+			 <a class = item href = "">link4</a>
+			</span>
+		</p>
+		
+		<h4 class = "subTitle">양식영역</h4>
+		<form>
+			<lable for = "userId">User Id</lable>
+			<input id = "userId" type = "text"/>
+		</form>
+	</body>
+</html>

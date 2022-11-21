@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+			<style>
+			* {
+				margin : 0px;
+				padding : 0px;
+				box-sizing: border-box;
+			}
+			#wrapper{
+				width : 1150px;
+				margin : 0px auto;
+			}
+			
+			img {
+				width : 100%;
+				height : 100%;
+			}
+			
+			
+			
+			.flex-container {
+				display : flex;
+			}
+			
+			
+		 	#nav1 {
+		 		flex-grow: 8;
+		 		margin-right : 20px;
+		 	}
+		 	
+		 	#nav2 {
+		 		flex-grow: 2;
+		 	}
+		 	
+		 	#news1 {
+		 		flex-grow: 7;
+		 		margin-right : 20px;
+		 	}
+		 	
+		 	#news2 {
+		 		flex-grow: 3;
+		 	}
+		 	
+		 	
+		 	#today1 {
+		 		flex-grow: 7;
+		 		margin-right : 20px;
+		 	}
+		 	
+		 	#today2 {
+		 		flex-grow: 3;
+		 	}
+		 	
+		 	#today2 > div > div {
+		 		flex-grow: 1;
+		 	}
+
+		</style>
+	</head>
+	
+	<body>
+		<div>
+			<div id = "banner"><img src = "../images/배너.png"/></div>
+			
+			<div id = "wrapper">
+				<div id = "startPage"><img src = "../images/시작페이지.png"/></div>
+				
+				<div id ="search"><img src = "../images/검색창.png"/></div>
+				
+				<!-- 메일 날씨 네비 -->
+				<div id = "nav" class = "flex-container">
+					<div id = "nav1"><img src = "../images/네비.png" height = "50px"/></div>
+					<div id = "nav2"><img src = "../images/날씨.png" height = "50px"/></div>
+				</div>
+				
+				<!-- 뉴스스탠드 + 로그인창,환율,쇼핑-->
+				<div id = "news" class = "flex-container">
+					<div id = "news1">
+						<div><img src = "../images/뉴스1.png"/></div>
+						<div><img src = "../images/뉴스2.png"/></div>
+						<div><img src = "../images/뉴스그리드.png"/></div>
+					</div>
+					
+					<div id = "news2">
+						<div><img src = "../images/로그인창.png"/></div>
+						<div><img src = "../images/증시.png"/></div>
+						<div><img src = "../images/트렌드쇼핑.png"/></div>
+					</div>
+				</div>
+				
+				<!-- 오늘 읽을만한 글 + 쇼핑사진들 -->
+				<div id = "today" class = "flex-container">
+					<div id = "today1">
+						<div><img src = "../images/오늘읽을만한글.png"/></div>
+						<div><img src = "../images/엔터.png"/></div>
+						<div class = "flex-container">
+							<div class = "webtoon"><img src = "../images/웹툰1.png"/></div>
+							<div class = "webtoon"><img src = "../images/웹툰2.png"/></div>
+						</div>
+					</div>
+					<div id = "today2">
+					<div class = "flex-container">
+						<div><img src = "../images/아이템1.png"/></div>
+						<div><img src = "../images/아이템2.png"/></div>
+						<div><img src = "../images/아이템3.png"/></div>
+					</div>
+					<div class = "flex-container">
+						<div><img src = "../images/아이템4.png"/></div>
+						<div><img src = "../images/아이템5.png"/></div>
+						<div><img src = "../images/아이템6.png"/></div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

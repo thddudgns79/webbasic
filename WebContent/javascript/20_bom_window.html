@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+		<!-- jQuery library -->
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+		<!-- Popper JS -->
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+		<script>
+			function fun1(){
+				//window의 console 속성
+				console.log("hello");
+				window.console.log("hello");
+			}
+			
+			function fun2(){
+				//window.innerWidth, innerHeight 속성
+				console.log(window.innerWidth, innerWidth);
+				console.log(window.innerHeight, innerHeight);
+			}
+			
+			function fun3(){
+				/* window의 다이얼로그와 관련된 메소드
+				alert("메시지입니다.");
+				let result = window.confirm("주문을 정말 하시겠습니까?");
+				if(result){
+					console.log("주문할께요~");
+				}else{
+					console.log("주문안할께요~");
+				} */
+				
+				//입력 다이얼로그
+				/* let result2 = window.prompt("필요한 정보를 입력하세요.", "아이디");
+				console.log(result2); */
+				
+				//별도의 작은 창에서 URL을 보여줌
+				//사용자 정의 다이얼로그
+				/* window.open("https://www.w3schools.com/", "", "top = 100, left = 100, width = 350, height = 500"); */
+				// 새 탭에서 URL을 보여줌
+				/* window.open("https://www.w3schools.com/", "_blank"); */
+				
+				//현재 탭에서 URL을 보여줌
+				window.open("https://www.w3schools.com/", "_self");
+			}
+
+			</script>
+	</head>
+	<body>
+		<div class = "card">
+			<div class = "card-header">
+				Window Properties
+			</div>
+			<div class = "card-body">
+				<div class = "btn-group">
+					<button class = "btn btn-info btn-small" onclick = fun1()>console 속성</button>
+					<button class = "btn btn-info btn-small" onclick = fun2()>innerWidth/innerHeight 속성</button>
+				</div>	
+			</div>
+		</div>
+		
+		<div class = "card mt-3">
+			<div class = "card-header">
+				Window Properties
+			</div>
+			<div class = "card-body">
+				<div class = "btn-group">
+					<button class = "btn btn-info btn-small" onclick = fun3()>다이얼로그 관련 메소드</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
